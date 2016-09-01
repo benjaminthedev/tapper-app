@@ -34,6 +34,9 @@
                                     <constraint firstAttribute="height" constant="120" id="psz-5V-sM4"/>
                                 </constraints>
                                 <state key="normal" image="playbtn"/>
+                                <connections>
+                                    <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxB-LS-HVg"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NFf-1v-YsY" userLabel="tapTxt">
                                 <rect key="frame" x="176" y="345" width="249" height="30"/>
@@ -51,6 +54,9 @@
                                     <constraint firstAttribute="height" constant="177" id="j2p-au-4pS"/>
                                 </constraints>
                                 <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="onCoinTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjn-VS-HoV"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10000 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqZ-02-Tl4" userLabel="TapsLbl">
                                 <rect key="frame" x="176" y="267" width="249" height="64"/>
@@ -81,6 +87,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A8b-7y-Qju" secondAttribute="bottom" id="xnn-v0-YGU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="howManyTapsTxt" destination="NFf-1v-YsY" id="vWP-ar-cYa"/>
+                        <outlet property="logoImg" destination="Wrg-hR-AW2" id="lHu-3H-8IZ"/>
+                        <outlet property="playBtn" destination="MiR-Av-oQm" id="dob-Lb-tgM"/>
+                        <outlet property="tapBtn" destination="BCN-qp-b5h" id="4yv-G2-gCt"/>
+                        <outlet property="tapsLbl" destination="IqZ-02-Tl4" id="5qq-GA-Dgn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
