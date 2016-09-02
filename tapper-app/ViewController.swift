@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
+    
     //Properties fool.....
     var maxTaps: Int = 0
     var currentTaps = 0
@@ -20,6 +21,25 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tapBtn: UIButton!
     @IBOutlet weak var tapsLbl: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Handle the text field’s user input through delegate callbacks.
+            howManyTapsTxt.delegate = self
+        }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        howManyTapsTxt.text = textField.text
+    }
+    
+    
     
     @IBAction func onCoinTapped(sender: UIButton!){
         currentTaps+=1
@@ -75,5 +95,9 @@ class ViewController: UIViewController {
         tapsLbl.text = "\(currentTaps) Taps"
         
     }
+    
 }
+
+
+
 

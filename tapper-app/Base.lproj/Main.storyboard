@@ -38,14 +38,14 @@
                                     <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxB-LS-HVg"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NFf-1v-YsY" userLabel="tapTxt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NFf-1v-YsY" userLabel="tapTxt">
                                 <rect key="frame" x="176" y="345" width="249" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="U0o-rM-fsx"/>
                                     <constraint firstAttribute="height" constant="45" id="llP-s4-f6i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
                             </textField>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-qp-b5h" userLabel="CoinBtn">
                                 <rect key="frame" x="214" y="49" width="172" height="177"/>
