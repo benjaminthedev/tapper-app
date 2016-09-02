@@ -3,7 +3,7 @@
 //  tapper-app
 //
 //  Created by Benjamin Dordoigne on 31/08/2016.
-//  Copyright © 2016 Benjamin The Geek!! All rights reserved.
+//  Copyright © 2016 Benjamin The Geek!! All rights reserved
 //
 
 import UIKit
